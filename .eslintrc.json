@@ -1,0 +1,20 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "quotes": ["error", "single"],
+    "comma-dangle": ["error", "never"],
+    "semi": ["error", "always"],
+    "max-len": ["error", { "code": 100 }],
+    "@typescript-eslint/no-explicit-any": ["error"],
+    "no-mixed-spaces-and-tabs": 1,
+    "no-empty": 1,
+    "no-unused-vars": ["warn", { "vars": "all", "args": "none", "ignoreRestSiblings": false }],
+    "indent": ["warn", 2, { "SwitchCase": 1 }],
+    "max-lines": ["warn", { "max": 250 }]
+  }
+}
